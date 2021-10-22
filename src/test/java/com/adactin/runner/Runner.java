@@ -11,7 +11,10 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(features = "src\\test\\java\\com\\adactin\\feature" , glue = "com\\adactin\\stepDefinition",
-				 plugin = {"pretty"},monochrome = true)
+				 plugin = {"pretty",
+					"json:target/MyReport/report.json",
+					 "junit:target/MyReport/report.xml"},
+				 	  monochrome = true)
 
 public class Runner 
 {
