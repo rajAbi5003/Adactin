@@ -1,4 +1,8 @@
-Feature: Book a Room 
+Background: User wants to login the application
+    Given User enters the URL for the application
+    When User enters "vinovicky" valid username
+    And User enters "GMN630" valid password
+    Then Verify username and password to login Feature: Book a Room 
 
 Scenario Outline: User wants to login the application
     Given User enters the URL for the application
